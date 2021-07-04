@@ -8,7 +8,7 @@ description: "Use this template to document release notes."
 
 Release Date: DATE, ## MONTH YEAR  
 
-This release of PRODUCT v #.#.# contains feature updates, API updates, and bug fixes. For hotfixes, add a page for the hotfix using this template and add links to all releases and hotfixes included in this hotfix. For examples, see [Release Notes](https://platform.riotgames.com/release-notes). 
+This release of PRODUCT v #.#.# contains feature updates, API updates, and bug fixes. For hotfixes, add a page for the hotfix using this template and add links to all releases and hotfixes included in this hotfix. 
 
 ## Build Information
 
