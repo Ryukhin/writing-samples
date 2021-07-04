@@ -1,6 +1,6 @@
 ---
 title: "Title of this Topic" 
-labels: search,keyword,search,keyword,Tibber
+labels: search,keyword,search,keyword
 file name: 'file-name-here.md'
 path: /docs/path-folder-here/
 description: "Use this template to create reference content in Reference Docs."
@@ -38,7 +38,7 @@ Paragraph introducing code sample block:
 }
 ``` 
 
-Paragraph with sample hyperlink to [live topic](/reference-docs/login-and-player-access/accessing-github-projects), intended to show hyperlink formatting. 
+Paragraph with sample hyperlink to [live topic](/sample-doc), intended to show hyperlink formatting. 
 
 [[note]]
 | **Note:** Something for readers to be aware of: an exception, constraint, dependency, or tip.
@@ -60,7 +60,7 @@ Paragraph introducing a video:
 
 Example button:
 
-!riotbutton[Get Started](/docs)
+!button[Get Started](/docs)
 
 ### H3-level Heading
 
