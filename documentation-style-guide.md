@@ -1,9 +1,8 @@
 ---
 title: "Documentation Style Guide"
-labels: docs, documentation, writing, reviewing, style, format, Tibber
+labels: docs, documentation, writing, reviewing, style, format
 file name: 'documentation-style-guide.md'
-path: /docs/integration/contributing/
-description: "Learn more about Riot documentation styles and usage."
+description: "Learn more about documentation styles and usage."
 ---
 
 This guide provides style, usage, and Markdown information to write, edit, and submit content to the Riot Platform Docs Portal.
@@ -97,21 +96,20 @@ Use H3-level headings to introduce processes and ordered tasks, in the Quick Sta
 
 * <a name="4hyperlinks"></a>For hyperlinks, use specific words instead of vague phrases like *click here* or *this page*. For example:
 
-  *See [Migrating from Gas to Atlas](#4hyperlinks).*
+  *See [Migrating to a New Database](#4hyperlinks).*
 
   Instead of
 
-  *Click [here](#4hyperlinks) for information on migrating from Gas to Atlas.*
+  *Click [here](#4hyperlinks) for information on migrating to a new database.*
 
 * Define or spell out an acronym on first reference in a topic, followed by the acronym in parentheses. Then use the acronym in subsequent references.
 
-* When introducing a service, process, or tool that may be called a by a different name, note that name to avoid any confusion. For example, depending on the context, *Riot Client* may also be referred to as the *desktop {{sdk}}*.
-
+* When introducing a service, process, or tool that may be called a by a different name, note that name to avoid any confusion. 
 * Precede the last item in a series with an Oxford comma. Example:
 
    *The Chat API includes friends, presences, and conversation endpoints.*
 
-### Words and Phrases Not to Use
+### Words and Phrases to Avoid
 
 Avoid using the following words, types of words, or phrases:
 
@@ -140,7 +138,7 @@ Avoid using the following words, types of words, or phrases:
   * *per* - Use only when defining rates, such as *per second*. Otherwise use *according to*.
   * *please* - A directly imperative, instructive style makes this word unnecessary.
   * *usage* - Use the noun *use*.
-  * *we* - Use *Riot*, *Riot Platform* or a name that identifies the subject of the phrase. Also, avoid using *we* to rhetorically refer to instructor and audience as in *In this topic, we will learn...* Use second-person reference (*you*).
+  * *we* -Use a name that identifies the subject of the phrase. Also, avoid using *we* to rhetorically refer to instructor and audience as in *In this topic, we will learn...* Use second-person reference (*you*).
   * *like* - Use *for example* or *such as* when using like to introduce a comparison or example.
 
 ## Formatting Text
@@ -175,9 +173,6 @@ You can add styles to the icon, including:
 
 See [Basic Use](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use) for more examples and information. 
 
-[[note]]
-| Contact ([#ask-portal-docs](https://riotgames.slack.com/messages/CKFJMLULA/)) to add a specific icon with CSS formatting to use across the doc portal.
-
 ### Hyperlinks
 
 Structure hyperlink references to match the Platform Portal Docs directory relative paths as defined in the appropriate [YAML file](#yaml). Links are based on titles in the YAML file, not topic file names.
@@ -207,7 +202,7 @@ You can also add a link to a specific heading in a file using a hashtag and head
 
   *!\[Alt_text\](/static/image_name.png)*
 
-* Save video in a Google Drive and embed into markdown. See [Google Drive Videos](#google-drive-videos).
+* Save video in a Google Drive and embed into markdown. 
 
 * Save video files in the *static/video* folder. Insert a video file link into a topic using the format:
 
@@ -221,8 +216,6 @@ You can also add a link to a specific heading in a file using a hashtag and head
 
   *\!riotbutton[button text]\(link-here)*
 
-* {{docteam}} only - Make sure topic files are saved in correct directories.
-* {{docteam}} only - Update navigation (yaml files) with new topics.
 
 ## Style and Formatting Development Content
 
@@ -269,13 +262,11 @@ Use the following formats and styles when documenting development endpoints and 
 * Use proper syntax in code samples so that developers can copy and paste them.
 
 [[note]]
-|  **Note:** Platform Portal Docs supports a selection of languages from RehypePrism using [Refractor](https://github.com/wooorm/refractor). These include JavaScript, JSON, C++, CSharp, Python, Java, Bash (console), and SQL. [Additional languages](https://github.com/wooorm/refractor/tree/master/lang) can be added anytime by contacting the team ([#ask-portal-docs](https://riotgames.slack.com/messages/CKFJMLULA/)).
+|  **Note:** Platform Portal Docs supports a selection of languages from RehypePrism using [Refractor](https://github.com/wooorm/refractor). These include JavaScript, JSON, C++, CSharp, Python, Java, Bash (console), and SQL. [Additional languages](https://github.com/wooorm/refractor/tree/master/lang) can be added anytime.
 
 ## Using Markdown Syntax
 
-For guidance on Markdown formatting, see the [GitHub Flavored Markdown Spec](https://github.github.com/gfm/), which is the primary source for the documentation portal Markdown syntax. Also, review the following custom block and format support. See [Integration Template](/docs/contribute-documentation/integration-template) to see Markdown formats, and the [source file](https://gh.riotgames.com/RPG/docs.rpg.riotgames.io/blob/master/docs/integration/contributing/topic-template.md) to start writing.
-
-If you would like special formats or have requests, contact [#ask-platform-docs](https://riotgames.slack.com/messages/CKFJMLULA/).
+For guidance on Markdown formatting, see the [GitHub Flavored Markdown Spec](https://github.github.com/gfm/), which is the primary source for the documentation portal Markdown syntax. Also, review the following custom block and format support. 
 
 ### Using Code Formats
 
@@ -283,11 +274,11 @@ Code syntax highlighting uses [Refractor](https://github.com/wooorm/refractor) a
 
 When introducing code samples, include the language used and type of call to help introduce the content to fellow developers using the samples for integrations.
 
-The Docs team can add [languages](https://prismjs.com/#languages-list) on request. Contact [#ask-platform-docs](https://riotgames.slack.com/messages/CKFJMLULA/).
+The Docs team can add [languages](https://prismjs.com/#languages-list) on request. 
 
 ### Using Mermaid
 
-The Riot Platform Docs Portal supports [Mermaid](https://mermaid-js.github.io/mermaid/#/) for flow charts, sequence diagrams, class diagrams, state diagrams, Gannt charts, pie charts, and entity relationship diagrams. Use the Mermaid [live editor](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVERcbiAgQVtDaHJpc3RtYXNdIC0tPnxHZXQgbW9uZXl8IEIoR28gc2hvcHBpbmcpXG4gIEIgLS0-IEN7TGV0IG1lIHRoaW5rfVxuICBDIC0tPnxPbmV8IERbTGFwdG9wXVxuICBDIC0tPnxUd298IEVbaVBob25lXVxuICBDIC0tPnxUaHJlZXwgRltmYTpmYS1jYXIgQ2FyXVxuXHRcdCIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19) to generate a diagram, adding the code inline to your Markdown files. 
+Use [Mermaid](https://mermaid-js.github.io/mermaid/#/) for flow charts, sequence diagrams, class diagrams, state diagrams, Gannt charts, pie charts, and entity relationship diagrams. Use the Mermaid [live editor](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVERcbiAgQVtDaHJpc3RtYXNdIC0tPnxHZXQgbW9uZXl8IEIoR28gc2hvcHBpbmcpXG4gIEIgLS0-IEN7TGV0IG1lIHRoaW5rfVxuICBDIC0tPnxPbmV8IERbTGFwdG9wXVxuICBDIC0tPnxUd298IEVbaVBob25lXVxuICBDIC0tPnxUaHJlZXwgRltmYTpmYS1jYXIgQ2FyXVxuXHRcdCIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19) to generate a diagram, adding the code inline to your Markdown files. 
 
 [[important]]
 | **Important:** Mermaid code must be inline with your content using the fenced code ticks. It must not be in a separate file.
@@ -310,9 +301,6 @@ sequenceDiagram
 	John-->>-Alice: I feel great!
 ```
 
-[[docs]]
-| **Guide:** See [Building Mermaid Diagrams](/docs/contribute-documentation/building-mermaid-diagrams) for code and diagram examples, quick starts, and guides.
-
 ### Using Table Formats
 
 Custom table formats are available for Markdown tables. To use these tables, add the custom format before the markdown table:
@@ -328,13 +316,13 @@ See the [Integration template](/docs/contribute-documentation/integration-templa
 
 Available formats include:
 
-* `[[longtable]]` - A default table format with the heading sticky to follow with scrolling, for example [Competitive Research Analysis](/reference-docs/legal-and-compliance/competitive-research-analysis) 
-* `[[diagram]]` - A blue scheme with spacing between cells great for diagraming information, for example [What Your PS Producer Does](/docs/partner-with-player-support/ps-early-production/what-your-ps-producer-does) 
-* `[[linkblock]]` - A table with an image (icons available in /static/icons) and text in the header with clickable rows, for example [Getting Started](/docs)
-* `[[timeline]]` and `[[timelinerows]]` - A timeline look with an image, text, and descriptions in rows, for example [Partner with Player Support](/docs/partner-with-player-support) and [Integrate Player Support Tools](/docs/integrate-player-support-tools)
-* `[[columns]]` - A phases or process steps table with blue gradient header, for example [Columns table](/docs/contribute-documentation/integration-template#columns)
-* `[[chart]]` - A phases or process steps table with blue gradient header with a side header, for example [[Find Your Support Level]](/docs/integrate-player-support-tools/about-levels-of-support#find-your-support-level)
-* `[[info]]` - A table with the first column as the header, with the traditional top header hidden, for example [[PS Support Level 1]](/docs/integrate-player-support-tools/about-levels-of-support/support-level-one).
+* `[[longtable]]` - A default table format with the heading sticky to follow with scrolling
+* `[[diagram]]` - A blue scheme with spacing between cells great for diagraming information
+* `[[linkblock]]` - A table with an image (icons available in /static/icons) and text in the header with clickable rows
+* `[[timeline]]` and `[[timelinerows]]` - A timeline look with an image, text, and descriptions in rows
+* `[[columns]]` - A phases or process steps table with blue gradient header
+* `[[chart]]` - A phases or process steps table with blue gradient header with a side header
+* `[[info]]` - A table with the first column as the header, with the traditional top header hidden
 
 ### Using Note Formats
 
@@ -345,8 +333,6 @@ The site provides custom blocks to call out content. These provide a shaded box 
 | **Note:** Add a note here. The blocks support Markdown formats.
 | For multiple paragraphs, add another pipe and add content.
 ```
-
-See the [Integration template](/docs/contribute-documentation/integration-template#block-formats) for examples.
 
 Available blocks include:
 
@@ -359,8 +345,6 @@ Available blocks include:
 
 If you have a Google document, slideshow, or spreadsheet, you can embed the files into topics. The site shows the content in an iframe, ensuring the latest information is provided on-load, without allowing viewers to edit your content. This can be helpful for runbooks, product roadmaps, and more.
 
-[[note]]
-| **Note:** Your content remains safe when embedded. The Riot Platform Docs Portal requires VPN access and Riot account authentication.
 
 ### Google Files
 
@@ -378,8 +362,6 @@ To embed a Google file:
 5. In your Markdown file, paste the iframe code. 
 6. Add the following style to the iframe code- `style="width: 100%; height: 400px; border: 1px solid black;"`.
 
-For examples, see [Understanding Feature Flags](/developer-docs/developing-the-riot-games-api/test-riot-games-api/understanding-feature-flags) sheet and [Create a Design Document](/docs/integrate-player-support-tools/ps-tool-integration-process/review-designs-for-feature-lock#creating-a-design-document) doc.
-
 ### Google Drive Videos
 
 You can embed a video using an iframe or embed code. This option gives your team control over videos and 
@@ -392,21 +374,20 @@ To embed a video from a Google Drive:
 4. To embed as an iframe, copy the code and paste into your markdown file. For example:
 
   ```html
-  <iframe src="https://drive.google.com/file/d/1KEHKktdSmc5YLmri4D-4fCjnQ_kwJpdi/preview" width="640" height="480"></iframe>
+  <iframe src="https://drive.google.com/preview" width="640" height="480"></iframe>
   ```
 
 5. To embed as an embed, copy the `src=` URL and add it to the following code in your markdown file. For example:
 
   ```html
-  <embed width="854" height="480" src="https://drive.google.com/file/d/1KEHKktdSmc5YLmri4D-4fCjnQ_kwJpdi/preview">
+  <embed width="854" height="480" src="https://drive.google.com/file/preview">
   ```
 
-For an example, see [Writing Riot Client Integration Tests](/developer-docs/developing-the-riot-games-api/test-riot-games-api/writing-riot-client-integration-tests).
 
 ## Using Markdown Templates
 
 See the following templates to quickly create and write content:
 
-* [Integration template](/docs/contribute-documentation/integration-template)
-* [Reference template](/docs/contribute-documentation/reference-template)
-* [Release Notes template](/docs/contribute-documentation/release-notes-template)
+* [Integration template](/integration-template)
+* [Reference template](/reference-template)
+* [Release Notes template](/release-notes-template)
